@@ -12,6 +12,8 @@ Instructions:
 
 * Disclaimer: Unfortunately there are a lot of requirements to running this file. We understand that you did not want to download anything, so if you do not run this program, we understand. We learned a lot from working with deep learning over the course of the last 24 hours and still thank you for the opportunity either way.
 
+(To enter venv first navigate to venv/Scripts and run 'activate', the venv contains pandas, numpy and regex)
+
 * Requirements: pip install pandas, pip install regex, pip install tensorflow, pip install numpy, pip install keras, pip install jupyter
 * The name of our file is chatbot.ipynb
 * Open up Jupyter Notebook, by running "jupyter notebook"
