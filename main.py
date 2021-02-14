@@ -5,10 +5,27 @@ import numpy as np
 
 def main():
     pairs = process_data()
-    find_tokens(pairs)
+    in_token = find_tokens(pairs)['in_token']
+    out_token = find_tokens(pairs)['out_token']
+    print(make_feature_dic(in_token, out_token)['reverse_output_dic'])
 
+def make_feature_dic(in_token, out_token):
+    input_dic = dict(
+        [(token, i) for i, token in enumerate(in_token)])
+    output_dic = dict(
+        [(token, i) for i, token in enumerate(out_token)])
 
+    reverse_input_dic = dict(
+        (i, token) for token, i in input_dic.items())
+    reverse_output_dic = dict(
+        (i, token) for token, i in output_dic.items())
 
+    return {
+        'input_dic': input_dic,
+        'output_dic': output_dic,
+        'reverse_input_dic': reverse_input_dic,
+        'reverse_output_dic': reverse_output_dic
+    }
 
 def find_tokens(pairs):
     input_arr, output_arr = [], []
