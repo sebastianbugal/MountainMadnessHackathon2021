@@ -8,6 +8,8 @@ Try asking her some things you would ask your own girlfriend!
 
 Instructions:
 
+* These 
+
 
 
 
